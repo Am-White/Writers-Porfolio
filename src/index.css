@@ -2,9 +2,15 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: '#F5D3C8';
+}
+
+@font-face {
+  font-family: catshop;
+  src: url('././fonts/catshop/CatShop.ttf');
 }
 
 /* Global styles */
 body, html { 
-  font-family: 'AcadamyEngravedLetPlain';
+  font-family: 'catshop';
 }

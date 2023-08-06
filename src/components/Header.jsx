@@ -11,11 +11,10 @@ import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import Drawer from "@mui/material/Drawer";
 
 
-const pages = ['About Us', 'Contact'];
+const pages = ['Projects', 'About Us', 'Contact'];
 
 function Header() {
   // MUI Menu Icon drawer 
@@ -44,11 +43,16 @@ function Header() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text} disablePadding>
+      <List >
+        <ListItem disablePadding>
+          <ListItemButton>
+            <a href="/" style={{textDecoration: 'none', fontFamily: 'Bebas Neue', fontSize: '30px', color: 'black'}}> Home </a>
+            </ListItemButton>
+          </ListItem>
+        {pages.map((page) => (
+          <ListItem key={page} disablePadding>
             <ListItemButton>
-              <ListItemText primary={text} />
+              <a href={page} style={{textDecoration: 'none', fontFamily: 'Bebas Neue', fontSize: '20px', color: 'black'}}> {page}</a>
             </ListItemButton>
           </ListItem>
         ))}
@@ -58,7 +62,7 @@ function Header() {
   );
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{boxShadow: 'none', backgroundColor: '#565857', borderBottom: '#935d76 solid 4px'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -69,33 +73,33 @@ function Header() {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              fontFamily: 'catshop',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            Writers Block
+            WRITERS BLOCK
           </Typography>
 
           <Typography
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: 'catshop',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            Writers Block
+            WRITERS BLOCK
           </Typography>
 
           <Box sx={{ flexGrow: 0, display: {xs: 'flex', md: 'none'}}}>
@@ -125,8 +129,11 @@ function Header() {
           <Box sx={{ flexGrow: 0, display: {xs: 'none', md: 'flex'}, marginLeft: 'auto'}}>
             {pages.map((page) => (
               <Button
+              className='menuBtn'
+              variant="outlined"
+              style={{fontFamily:'catshop', backgroundColor: '#8A8D91', background: 'none',  border: '#BCBDC0 solid 1px', color: 'white', marginLeft: '10px', marginRight: '10px', borderRadius: 1}}
                 key={page}
-                sx={{ my: 2, color: 'white' }}
+                href={page}
               >
                 {page}
               </Button>

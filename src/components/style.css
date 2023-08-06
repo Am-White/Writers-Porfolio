@@ -1,0 +1,96 @@
+.App-footer {
+  min-height: 15vh;
+  display: flex;
+  bottom: 0;
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+  align-items: center;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  position: relative;
+  padding-left: 20px;
+}
+
+.footer-links{ 
+  text-decoration: none;
+  color: white;
+}
+.footer-grid{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer-link-grid{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.article {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.picture {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 400px;
+ 
+  filter: contrast(1.3) brightness(.5)
+}
+
+.header {
+  font-family: catshop;
+  font-size: 20px;
+  color: rgb(204, 155, 155);
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  height: contain;
+  background-color: #734b5ebc;
+  margin-left: calc(40px + 2vmin);
+  margin-right: 50px;
+  padding: 5px;
+}
+
+.iconContainer {
+  background-color: #734B5E;
+}
+
+.icons {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+
+.iconGrid {
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.teamImg{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  bottom: 70px;
+}
+.teamImgSmall{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cardBtn:hover {
+  background-color:  #8a8d91a0 !important;
+}
+
+.menuBtn:hover {
+  background-color: #bcbdc088 !important;
+  text-decoration: underline !important;
+}
+  
