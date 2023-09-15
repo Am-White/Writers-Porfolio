@@ -40,3 +40,22 @@
     transform: rotate(360deg);
   }
 }
+
+.teamImg{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  bottom: 20px;
+  border: #0000003f solid 8px;
+  margin: auto
+}
+.teamImgSmall{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: #0000003f solid 8px;
+  margin: auto
+}

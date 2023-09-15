@@ -27,13 +27,13 @@ function Projects(props) {
   
   return (
     <>
-    <div style={{ backgroundColor: '#BCBDC0'}}>
+    <div style={{ backgroundColor: '#35386F'}}>
     <Container sx={{minHeight: '85vh'}}>
         <br />
-        <Typography variant='h2' style={{fontFamily:'catshop', color: '#734B5E'}}> Our Work </Typography>
-        <Typography variant='body1' style={{fontFamily: 'Bebas Neue'}}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Typography>
+        <Typography variant='h2' style={{fontFamily:'catshop', color: '#BEB2EE'}}> Our Work </Typography>
+        <Typography variant='body1' style={{fontFamily: 'cabin', color: '#E5EBF7 '}}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Typography>
         <br />
-        <Divider style={{backgroundColor: '#734B5E', opacity: '50%',height: '2px'}}/>
+        <Divider style={{backgroundColor: '#E4D4BC', opacity: '50%', height: '2px'}}/>
         <br />
         <Box sx={{ width: '100%' }}>
           <Grid container rowSpacing={1} spacing={1} >
@@ -45,7 +45,7 @@ function Projects(props) {
                     key={index} 
                     value={type.value} 
                     onClick={handleCategory} 
-                    style={{ border: 'none', textDecoration: 'underline', cursor: 'pointer', background: 'none', fontSize: '25px', fontFamily:'catshop', paddingRight: '20px'}}
+                    style={{ border: 'none', textDecoration: 'underline', cursor: 'pointer', background: 'none', fontSize: '25px', fontFamily:'catshop', paddingRight: '20px', color: '#E5EBF7 '}}
                     >
                     {type.name}
                   </button>
@@ -55,15 +55,15 @@ function Projects(props) {
           </Grid>
         </Box>
         <br />
-        <Divider style={{backgroundColor: '#734B5E', opacity: '50%',height: '2px'}}/>
+        <Divider style={{backgroundColor: '#E4D4BC', opacity: '50%',height: '2px'}}/>
         <br />
 
-    <Box sx={{ width: '100%', paddingBottom: '35px'}}>
+    <Box sx={{ width: '100%', paddingBottom: '35px', margin: 0}}>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {filtredCategory &&
           filtredCategory.map(type => (
             <>
-            <Grid item xs={4} md={3}>
+            <Grid item xs={12} md={6} lg={3}>
               <ProjectCard key={type.id} {...type}/>
             </Grid>
             </>

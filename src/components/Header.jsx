@@ -8,13 +8,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import Drawer from "@mui/material/Drawer";
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 
-const pages = ['Projects', 'About Us', 'Contact'];
+const pages = ['Portfolio', 'Services', 'About Helen', 'About Jake', 'Contact'];
 
 function Header() {
   // MUI Menu Icon drawer 
@@ -36,9 +37,18 @@ function Header() {
     setState({ ...state, [anchor]: open });
   };
 
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250, background: '#E5EBF7', height: '100%' }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -46,24 +56,23 @@ function Header() {
       <List >
         <ListItem disablePadding>
           <ListItemButton>
-            <a href="/" style={{textDecoration: 'none', fontFamily: 'Bebas Neue', fontSize: '30px', color: 'black'}}> Home </a>
+            <a href="/" style={{textDecoration: 'none', fontFamily: 'cabin', fontSize: '30px', color: '#35386F'}}> Home </a>
             </ListItemButton>
           </ListItem>
         {pages.map((page) => (
           <ListItem key={page} disablePadding>
-            <ListItemButton>
-              <a href={page} style={{textDecoration: 'none', fontFamily: 'Bebas Neue', fontSize: '20px', color: 'black'}}> {page}</a>
+            <ListItemButton href={page}>
+              <a href={page} style={{textDecoration: 'none', fontFamily: 'cabin', fontSize: '20px', color: '#35386F'}}> {page}</a>
             </ListItemButton>
           </ListItem>
         ))}
       </List>
-      <Divider />
     </Box>
   );
 
   return (
-    <AppBar position="static" style={{boxShadow: 'none', backgroundColor: '#565857', borderBottom: '#935d76 solid 4px'}}>
-      <Container maxWidth="xl">
+    <AppBar position="static" style={{boxShadow: 'none', backgroundColor: '#35386F', width: '100%'}}>
+      <Container maxWidth="xxl">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -78,47 +87,48 @@ function Header() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              color: '#E5EBF7',
             }}
           >
-            WRITERS BLOCK
+          NARRATIVE WITCHCRAFT
           </Typography>
 
           <Typography
-            variant="h5"
+           
             noWrap
             component="a"
             href="/"
             sx={{
               mr: 2,
+              fontSize: 'calc(6px + 2vmin)',
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'catshop',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
               textDecoration: 'none',
+              color: '#E5EBF7',
             }}
           >
-            WRITERS BLOCK
+          NARRATIVE WITCHCRAFT
           </Typography>
 
           <Box sx={{ flexGrow: 0, display: {xs: 'flex', md: 'none'}}}>
             {["right"].map((anchor) => (
               <React.Fragment key={anchor}>
                 <IconButton
-                    size=""
                     aria-label="account of current user"
                     aria-controls="menu-appbar"
                     aria-haspopup="true"
                     onClick={toggleDrawer(anchor, true)}
-                    color="inherit"
                   >
-                    <MenuIcon />
+                    <MenuIcon style={{color:'#E5EBF7', background: 'none'}}/>
                 </IconButton>
                 <Drawer
                   anchor={anchor}
                   open={state[anchor]}
                   onClose={toggleDrawer(anchor, false)}
+                  
                 >
                   {list(anchor)}
                 </Drawer>
@@ -127,17 +137,69 @@ function Header() {
           </Box>
 
           <Box sx={{ flexGrow: 0, display: {xs: 'none', md: 'flex'}, marginLeft: 'auto'}}>
-            {pages.map((page) => (
+              <Button
+              href= '/projects'
+              className='menuBtn'
+              variant="outlined"
+              style={{textDecoration: 'none', fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 2px', color: '#E5EBF7', borderRadius: '3px', marginRight: '5px'}}
+              >
+                Portfolio
+              </Button>
+              <Button
+              href= '/services'
+              className='menuBtn'
+              variant="outlined"
+              style={{textDecoration: 'none', fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 2px', color: '#E5EBF7', borderRadius: '3px', marginLeft: '5px', marginRight: '5px'}}
+              >
+                Services
+              </Button>
+
+
               <Button
               className='menuBtn'
               variant="outlined"
-              style={{fontFamily:'catshop', backgroundColor: '#8A8D91', background: 'none',  border: '#BCBDC0 solid 1px', color: 'white', marginLeft: '10px', marginRight: '10px', borderRadius: 1}}
-                key={page}
-                href={page}
+              aria-controls={open ? 'basic-menu' : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? 'true' : undefined}
+              onClick={handleClick}
+              style={{textDecoration: 'none', fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 2px', color: '#E5EBF7', borderRadius: '3px', marginLeft: '5px', marginRight: '5px'}}
               >
-                {page}
+                About Us
               </Button>
-            ))}
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  'aria-labelledby': 'basic-button',
+                }}
+              >
+                <MenuItem 
+                  onClick={handleClose}
+                  >
+                    <a href='/About Helen' style={{textDecoration: 'none', fontFamily:'cabin',color: '#4E57A4'}}>
+                  About Helen
+                    </a>
+                </MenuItem>
+                <MenuItem 
+                  onClick={handleClose}
+                  >
+                  <a href='/About Jake' style={{textDecoration: 'none', fontFamily:'cabin',color: '#4E57A4'}}>
+                    About Jake
+                  </a>
+                </MenuItem>
+              </Menu>
+
+
+              <Button
+              href= '/contact'
+              className='menuBtn'
+              variant="outlined"
+              style={{textDecoration: 'none', fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 2px', color: '#E5EBF7', borderRadius: '3px', marginLeft: '5px'}}
+              >
+                Contact
+              </Button>
           </Box>
         </Toolbar>
       </Container>

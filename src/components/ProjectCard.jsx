@@ -1,11 +1,8 @@
 import * as React from 'react';
-import { useState } from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import './style.css';
 
@@ -14,27 +11,29 @@ function ProjectCard(type, category) {
   return (
       <>
         <div>
-          <Card sx={{ maxWidth: 300, background: 'rgb(250,250,250, .6)', borderRadius: 1}}>
-            {/* <CardMedia
+          <Card sx={{ background: '#4E57A4', borderRadius: 1}}>
+            <CardMedia
               sx={{ height: 140 }}
               image={type.imageLink}
               title={type.title}
-            /> */}
+            />
             <CardContent >
-            <Typography variant="h4" style={{fontFamily:'catshop'}}>
+            <Typography variant="h4" style={{paddingLeft: '5px', fontFamily:'catshop', color: '#E5EBF7'}}>
                 {type.title}
               </Typography>
-              <Typography variant="body1" style={{paddingLeft: '5px', fontFamily: 'Bebas Neue'}}>
+              <Typography variant="body1" style={{paddingLeft: '5px', fontFamily: 'cabin', color: '#8798ED'}}>
                 Author: {type.author}
               </Typography>
-              <Typography variant="body1" color="text.secondary" style={{paddingLeft: '5px', fontFamily: 'Bebas Neue'}}>
+              <Typography variant="body1" color="text.secondary" style={{paddingLeft: '5px', fontFamily: 'cabin', color: '#BEB2EE'}}>
                 {type.preText}
               </Typography>
               <br/>
-              <Button className='cardBtn' href={type.liveLink} size="small" style={{fontFamily:'catshop', background: 'none',  border: '#BCBDC0 solid 1px', color: 'black', paddingLeft: '10px', paddingRight: '10px', borderRadius: 0}}>Read More</Button>
+              <a href={type.downloadLink} download={type.title} target='_blank' rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+              <Button className='cardBtn' href={type.liveLink} size="small" style={{fontFamily:'catshop', background: '#8798ED', border: '#8798ED solid 2px', borderRadius: '3px', color: 'black', paddingLeft: '10px', paddingRight: '10px', boxShadow: '3px 3px #411ECC', marginRight: '20px'}}>Read More</Button>
+              </a>
+                  {/* <Button className='cardBtn' href={type.liveLink} size="small" style={{fontFamily:'catshop', border: '#2e9d99 solid 2px', borderRadius: '3px', color: 'black', paddingLeft: '10px', paddingRight: '10px', boxShadow: '3px 3px black'}}>Download</Button> */}
             </CardContent>
           </Card>
-
         </div>
       </>
   )};

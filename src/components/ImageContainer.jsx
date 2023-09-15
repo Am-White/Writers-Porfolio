@@ -1,13 +1,15 @@
 import React from 'react';
 import './style.css';
-import {Image} from 'react-native';
+import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
 
 
 function ImageComponents() {
 
   return (
+    <>
     <div  className='article'>
           <img 
             alt="main" 
@@ -16,12 +18,34 @@ function ImageComponents() {
             className='picture'
             style={{boxShadow: '2px 2px 10px'}}
             />
-            <p 
-            className='header'>
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod” 
-              <br />-AI
-            </p>
+
+            <Box className='header'>
+              <Typography variant='h5' sx={{fontFamily: 'catshop', marginBottom: '20px'}}>
+              You open the website, looking to hire a talented narrative designer. What do you do first?
+              </Typography>
+              <Stack spacing={2} direction="row" justifyContent="center">
+                <Button 
+                  href='/projects'
+                  className='cardBtn'
+                    style={{ fontFamily:'cabin', background: '#8798ED', border: '#8798ED solid 2px', color: '#373737', borderRadius: '3px', boxShadow: '3px 3px #411ECC', float: 'left'}}> 
+                   Browse Our Services
+                </Button>
+                <Button 
+                  href='/projects'
+                  className='cardBtn'
+                    style={{fontFamily:'cabin', background: '#8798ED', border: '#8798ED solid 2px', color: '#373737', borderRadius: '3px',  boxShadow: '3px 3px #411ECC'}}> 
+                    Learn about Helen 
+                </Button>
+                <Button 
+                  href='/projects'
+                  className='cardBtn'
+                    style={{fontFamily:'cabin', background: '#8798ED', border: '#8798ED solid 2px', color: '#373737', borderRadius: '3px', boxShadow: '3px 3px #411ECC'}}> 
+                    Learn about Jake 
+                </Button>
+            </Stack>
+            </Box>
     </div>
+    </>
   );
 }
 

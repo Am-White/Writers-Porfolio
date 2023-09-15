@@ -17,7 +17,7 @@ function ContactPage () {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_co164qa', 'template_aa9wikl', form.current, 'bx4-GAochnE7KPzmm')
+    emailjs.sendForm('service_70cz1nl', 'template_gr78mmr', form.current, 'udQZT3fgYrIG5rGlu')
       .then((result) => {
           // console.log(result.text);
       }, (error) => {
@@ -28,16 +28,16 @@ function ContactPage () {
   };
 
   return (
-    <div style={{ backgroundColor: '#BCBDC0'}}>
+    <div style={{ backgroundColor: '#4E57A4'}}>
       <Container container sx={{minHeight: '85vh', paddingTop: '35px'}}>
         <Stack className="contact-box" direction="column" >
           <Typography 
             variant="h2" 
-            style={{ fontFamily: 'catshop', letterSpacing: '3px', textAlign: 'center'}}>
+            style={{ fontFamily: 'catshop', letterSpacing: '3px', textAlign: 'center', color: '#BEB2EE'}}>
             Contact Form
           </Typography>
-          <Divider variant="fullWidth" style={{backgroundColor: '#734B5E', opacity: '50%',height: '2px', marginBottom: '15px'}} /> 
-          <Typography style={{ fontFamily: 'Bebas Neue', letterSpacing: '3px', textAlign: 'center'}}>
+          <Divider variant="fullWidth" style={{backgroundColor: 'white', opacity: '50%',height: '2px', marginBottom: '15px'}} /> 
+          <Typography variant='h6' style={{ fontFamily: 'cabin', textAlign: 'center', color: '#E5EBF7'}}>
             Please reach out to us via this form with your name, email, and a short message explaining
             your questions, interests, or if you just want to connect.
           </Typography>
@@ -52,6 +52,7 @@ function ContactPage () {
                   placeholder='Name' 
                   name='user_name'
                   id="name"
+                  sx={{ input: { color: 'black', backgroundColor: 'white', borderRadius: '5px'} }}
                   aria-invalid={errors.name ? "true" : "false"}
                   {...register('name', { required: true, maxLength: 30 })} />
 
@@ -63,6 +64,7 @@ function ContactPage () {
                   )}
 
                   <TextField type='email' placeholder='Email address' name='user_email' id="email"
+                     sx={{ input: { color: 'black', backgroundColor: 'white', borderRadius: '5px'} }}
                   aria-invalid={errors.email ? "true" : "false"}
                   {...register("email", {
                     required: true,
@@ -77,11 +79,12 @@ function ContactPage () {
                   )}
                   <br/>
                 <TextField 
+                  sx={{ color: 'black', backgroundColor: 'white', borderRadius: '5px'}}
                   name='message' 
                   type='text' 
                   placeholder='Message' 
                   multiline 
-                  minRows={6} 
+                  minRows={6}
                   aria-invalid={errors.message ? "true" : "false"}
                   {...register("message", {
                     required: true,
@@ -97,7 +100,7 @@ function ContactPage () {
                 className="contact-btn" 
                 type='submit' 
                 value='Submit' 
-                style={{ fontFamily: 'catshop', fontSize: '20px', letterSpacing: '3px', width: '100%', border: '#734B5E 1px solid', color: 'white', backgroundColor: 'rgba(115, 75, 94, .5)'}} 
+                style={{ fontFamily: 'catshop', color: 'black', fontSize: '20px', letterSpacing: '3px', width: '100%', border: '#8798ED 2px solid', boxShadow: '3px 3px #411ECC', backgroundColor: '#8798ED'}} 
                 disabled={!isDirty || !isValid} 
                 onClick={() => {
                   alert('Thank you! Your email was sent!');

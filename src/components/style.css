@@ -1,9 +1,10 @@
+:root{
+  width: 100%;
+}
 .App-footer {
-  min-height: 15vh;
+  min-height: 11vh;
   display: flex;
   bottom: 0;
-  /* font-size: calc(10px + 2vmin); */
-  color: white;
   align-items: center;
   text-align: center;
   font-size: calc(10px + 2vmin);
@@ -13,7 +14,7 @@
 
 .footer-links{ 
   text-decoration: none;
-  color: white;
+  color: #C4CEEA;
 }
 .footer-grid{
   padding-left: 20px;
@@ -40,22 +41,35 @@
 }
 
 .header {
-  font-family: catshop;
-  font-size: 20px;
-  color: rgb(204, 155, 155);
-  text-align: center;
+  flex: 1;
+  padding: 20px;
+  color: #373737;
   position: absolute;
-  bottom: 20px;
-  left: 0;
-  height: contain;
-  background-color: #734b5ebc;
-  margin-left: calc(40px + 2vmin);
-  margin-right: 50px;
-  padding: 5px;
+  bottom: 30px;
+  background-color: #e5ebf7ae;
+  /* margin-left: calc(40px + 2vmin);
+  margin-right: 50px; */
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: fit-content;
+  border-radius: 5px; 
+}
+
+.imgBtn:hover {
+  background-color: #BEB2EE !important;
 }
 
 .iconContainer {
-  background-color: #734B5E;
+  background-color: #E4D4BC;
+  padding: 20px;
+  border-radius: 50% 50% 0% 0%;
+  box-shadow: 10px 10px #9C30FD;
+  min-width: 220px;
+  border: #E4D4BC solid 4px;
+  color: #442222
 }
 
 .icons {
@@ -67,30 +81,53 @@
 
 .iconGrid {
   padding: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .teamImg{
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
-  bottom: 70px;
+  bottom: 20px;
+  border: none;
+  margin: auto;
+  box-shadow: 10px 10px #E4D4BC ;
 }
-.teamImgSmall{
-  width: 250px;
-  height: 250px;
+.aboutUsImg {
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 50%;
+  border: none;
+  box-shadow: #E4D4BC 10px 10px;
+  margin: auto
+}
+
+.teamImgSmall{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: none;
+  box-shadow: #E4D4BC 5px 5px;
+  margin: auto
 }
 
 .cardBtn:hover {
-  background-color:  #8a8d91a0 !important;
+  background-color:  #BEB2EE !important;
+  border-color: #BEB2EE !important;;
+}
+
+.App-footer {
+  background-color: #ebb4abeb;
+  background-color: #49f8f2;
 }
 
 .menuBtn:hover {
-  background-color: #bcbdc088 !important;
-  text-decoration: underline !important;
+  background-color: #BEB2EE !important;
+  color: #4E57A4 !important;
+  
 }
   

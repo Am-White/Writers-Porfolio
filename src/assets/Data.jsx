@@ -1,12 +1,13 @@
 export const projects = [
   {
     id: 1,
-    title: 'Title one',
-    author: 'helen',
+    title: 'Dwelling',
+    author: 'Helen SilverStein',
     category: 'twist',
     imageLink: '',
-    liveLink: '/',
-    preText: 'This story is about...',
+    openLink: '',
+    downloadLink: 'https://docs.google.com/document/d/1fZdOW7GTmSWw6T5i-fy4RMT-CQoAZrSVdAx0ncF7e_4/edit',
+    preText: 'Dwelling is an interactive science fiction story set in the future after a total nuclear annihilation has left a Puritan society in an underground bunker as the only surviving members of the human race',
 
 
   },
@@ -16,7 +17,8 @@ export const projects = [
     author: 'jake',
     category: 'dark',
     imageLink: '',
-    liveLink: '/',
+openLink: '',
+downloadLink: '',
     preText: 'This story is about...',
   },
   {
@@ -25,7 +27,8 @@ export const projects = [
     author: 'helen and jake',
     category: 'twist',
     imageLink: '',
-    liveLink: '/',
+openLink: '',
+downloadLink: '',
     preText: 'This story is about...',
   },
   {
@@ -34,7 +37,8 @@ export const projects = [
     author: 'helen',
     category: 'romance',
     imageLink: '',
-    liveLink: '/',
+openLink: '',
+downloadLink: '',
     preText: 'This story is about...',
   },
  ]
