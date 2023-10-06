@@ -35,9 +35,9 @@
   object-fit: cover;
   position: relative;
   width: 100%;
-  height: 400px;
+  max-height: 500px;
  
-  filter: contrast(1.3) brightness(.5)
+  /* filter: contrast(1.3) brightness(.5) */
 }
 
 .header {
@@ -58,6 +58,12 @@
   border-radius: 5px; 
 }
 
+.headerLogo {
+  height: 150px;
+  position: relative;
+  object-fit: cover;
+}
+
 .imgBtn:hover {
   background-color: #BEB2EE !important;
 }
@@ -69,7 +75,8 @@
   box-shadow: 10px 10px #9C30FD;
   min-width: 220px;
   border: #E4D4BC solid 4px;
-  color: #442222
+  color: #442222;
+  height: 90%;
 }
 
 .icons {
@@ -118,6 +125,7 @@
 .cardBtn:hover {
   background-color:  #BEB2EE !important;
   border-color: #BEB2EE !important;;
+  color: #4E57A4 !important;
 }
 
 .App-footer {
@@ -127,7 +135,21 @@
 
 .menuBtn:hover {
   background-color: #BEB2EE !important;
+  border: #BEB2EE solid 3px !important;
   color: #4E57A4 !important;
-  
 }
-  
+
+.servicesBtn:hover {
+  background-color: #BEB2EE !important;
+  border: #BEB2EE solid 5px !important;
+  color: #4E57A4 !important;
+}
+
+.categoryBtn:hover{
+  background-color: #BEB2EE !important;
+  color: #4E57A4 !important;
+}
+
+.categoryBtn :hover{
+  background-color: #4E57A4 !important;
+}

@@ -43,7 +43,7 @@ function MainPage() {
 
     return (
         <Carousel
-        sx={{ width: '80%', margin: 'auto'}}
+        sx={{ width: '90%', margin: 'auto'}}
         fullHeightHover={true}    
         navButtonsProps={{         
             style: {
@@ -75,12 +75,12 @@ function MainPage() {
 function Item(props)
 {
     return (
-        <Paper style={{backgroundColor:'#4E57A4', height: 'fit-content', padding: '20px', margin: 'auto', marginTop: '30px', marginBottom: '30px'}}>
+        <Paper style={{backgroundColor:'#4E57A4', height: 'auto', padding: '20px', margin: 'auto', marginTop: '30px'}}>
             <Typography variant="h2" style={{fontFamily:'catshop', color: '#BEB2EE'}}>{props.item.name}</Typography>
       
-            <Typography variant='h6' style={{fontFamily:'cabin', color: '#BEB2EE'}}>{props.item.description}</Typography>
+            <Typography variant='h4' style={{fontFamily:'cabin', color: '#BEB2EE', padding: '10px'}}>{props.item.description}</Typography>
 
-            <Button href='/services' className='menuBtn' style={{fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 2px', color: '#E5EBF7', borderRadius: '3px', margin: '10px'}}>
+            <Button href='/services' className='menuBtn' style={{fontFamily:'cabin',  fontWeight: 900, background: 'none',  border: '#E5EBF7 solid 3px', color: '#E5EBF7', borderRadius: '3px', margin: '10px'}}>
                 Learn More
             </Button>
         </Paper>
@@ -90,7 +90,7 @@ function Item(props)
   return (
     <>
     <div style={{ backgroundColor: '#35386F'}}>
-    <Grid  direction="column" sx={{ alignItems: 'stretch', textAlign: 'center'}}>
+    <Grid container direction="column" sx={{ alignItems: 'stretch', textAlign: 'center'}}>
       <Grid item >
       <ImageComponents/>
       </Grid>
@@ -109,10 +109,10 @@ function Item(props)
       <DreamTeam />
       </Grid>
 
-      <Divider style={{ backgroundColor: 'white', height: '5px', width:'80%', margin: 'auto', marginBottom: '25px', marginTop: '25px'}}/>
+      <Divider style={{ backgroundColor: 'white', height: '5px', width:'80%', margin: 'auto',  marginTop: '20px'}}/>
 
-      <Grid>
-        <Box sx={{backgroundColor: '#4E57A4', marginLeft: '20px', marginRight: '20px', marginTop: '20px', padding: '30px', borderRadius: '5px'}}>
+      <Grid item sx={{padding: '20px'}}>
+        <Box sx={{backgroundColor: '#4E57A4', padding: '30px', borderRadius: '5px'}}>
           <Typography sx={{fontFamily:'catshop', fontSize: '25px', color: 'white'}}> Helen and Jake are a narrative design team. You may hire either individually or both together. Feel free to reach out to us for any of your game writing needs!  </Typography>
         </Box>     
       </Grid>

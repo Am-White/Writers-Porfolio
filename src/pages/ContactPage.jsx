@@ -38,8 +38,7 @@ function ContactPage () {
           </Typography>
           <Divider variant="fullWidth" style={{backgroundColor: 'white', opacity: '50%',height: '2px', marginBottom: '15px'}} /> 
           <Typography variant='h6' style={{ fontFamily: 'cabin', textAlign: 'center', color: '#E5EBF7'}}>
-            Please reach out to us via this form with your name, email, and a short message explaining
-            your questions, interests, or if you just want to connect.
+          Are you interested in hiring Narrative Witchcraft for your next project? Want to learn more about how we can level up your story? Don’t be shy; drop us a line below!
           </Typography>
           <br/>
           <form 

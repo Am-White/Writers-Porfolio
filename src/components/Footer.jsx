@@ -15,7 +15,7 @@ function Footer() {
             </Grid>   */}
             <Grid item className="footer-link-grid" style={{ letterSpacing: {xs: '1px'}, fontFamily: 'catshop', color: '#C4CEEA'}}>
               <a href="/" className="footer-links"> Home -</a> 
-              <a href="/projects" className="footer-links"> Projects -</a> 
+              <a href="/portfolio" className="footer-links"> Portfolio -</a> 
               <a href="/Contact" className="footer-links"> Contact</a> 
               {/* <a href="/" className="footer-links"> Terms -</a> 
               <a href="/" className="footer-links"> Privacy Policy</a>  */}

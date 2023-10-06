@@ -3,7 +3,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
@@ -13,6 +12,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import Drawer from "@mui/material/Drawer";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import headerLogo from './../images/headerLogo.png';
 
 
 const pages = ['Portfolio', 'Services', 'About Helen', 'About Jake', 'Contact'];
@@ -56,7 +56,7 @@ function Header() {
       <List >
         <ListItem disablePadding>
           <ListItemButton>
-            <a href="/" style={{textDecoration: 'none', fontFamily: 'cabin', fontSize: '30px', color: '#35386F'}}> Home </a>
+            <a href="/" style={{textDecoration: 'none', fontFamily: 'catshop', fontSize: '30px', color: '#35386F'}}> Home </a>
             </ListItemButton>
           </ListItem>
         {pages.map((page) => (
@@ -74,46 +74,10 @@ function Header() {
     <AppBar position="static" style={{boxShadow: 'none', backgroundColor: '#35386F', width: '100%'}}>
       <Container maxWidth="xxl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'catshop',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-              color: '#E5EBF7',
-            }}
-          >
-          NARRATIVE WITCHCRAFT
-          </Typography>
-
-          <Typography
-           
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              fontSize: 'calc(6px + 2vmin)',
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'catshop',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              textDecoration: 'none',
-              color: '#E5EBF7',
-            }}
-          >
-          NARRATIVE WITCHCRAFT
-          </Typography>
-
-          <Box sx={{ flexGrow: 0, display: {xs: 'flex', md: 'none'}}}>
+          <a href='/'>
+          <Box alt='header' component='img' sx={{ margin: '10px'}} src={headerLogo} className='headerLogo'/>
+          </a>
+          <Box sx={{ flexGrow: 0, display: {xs: 'flex', md: 'none'}, marginLeft: 'auto'}}>
             {["right"].map((anchor) => (
               <React.Fragment key={anchor}>
                 <IconButton
@@ -122,7 +86,7 @@ function Header() {
                     aria-haspopup="true"
                     onClick={toggleDrawer(anchor, true)}
                   >
-                    <MenuIcon style={{color:'#E5EBF7', background: 'none'}}/>
+                    <MenuIcon fontSize="large" style={{color:'#E5EBF7', background: 'none'}}/>
                 </IconButton>
                 <Drawer
                   anchor={anchor}
@@ -138,10 +102,10 @@ function Header() {
 
           <Box sx={{ flexGrow: 0, display: {xs: 'none', md: 'flex'}, marginLeft: 'auto'}}>
               <Button
-              href= '/projects'
+              href= '/portfolio'
               className='menuBtn'
               variant="outlined"
-              style={{textDecoration: 'none', fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 2px', color: '#E5EBF7', borderRadius: '3px', marginRight: '5px'}}
+              style={{textDecoration: 'none',  fontWeight: 900, fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 3px', color: '#E5EBF7', borderRadius: '3px', marginRight: '5px'}}
               >
                 Portfolio
               </Button>
@@ -149,7 +113,7 @@ function Header() {
               href= '/services'
               className='menuBtn'
               variant="outlined"
-              style={{textDecoration: 'none', fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 2px', color: '#E5EBF7', borderRadius: '3px', marginLeft: '5px', marginRight: '5px'}}
+              style={{textDecoration: 'none',  fontWeight: 900, fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 3px', color: '#E5EBF7', borderRadius: '3px', marginLeft: '5px', marginRight: '5px'}}
               >
                 Services
               </Button>
@@ -162,7 +126,7 @@ function Header() {
               aria-haspopup="true"
               aria-expanded={open ? 'true' : undefined}
               onClick={handleClick}
-              style={{textDecoration: 'none', fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 2px', color: '#E5EBF7', borderRadius: '3px', marginLeft: '5px', marginRight: '5px'}}
+              style={{textDecoration: 'none',  fontWeight: 900, fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 3px', color: '#E5EBF7', borderRadius: '3px', marginLeft: '5px', marginRight: '5px'}}
               >
                 About Us
               </Button>
@@ -178,14 +142,14 @@ function Header() {
                 <MenuItem 
                   onClick={handleClose}
                   >
-                    <a href='/About Helen' style={{textDecoration: 'none', fontFamily:'cabin',color: '#4E57A4'}}>
+                    <a href='/About Helen' style={{textDecoration: 'none',  fontWeight: 900, fontFamily:'cabin',color: '#4E57A4'}}>
                   About Helen
                     </a>
                 </MenuItem>
                 <MenuItem 
                   onClick={handleClose}
                   >
-                  <a href='/About Jake' style={{textDecoration: 'none', fontFamily:'cabin',color: '#4E57A4'}}>
+                  <a href='/About Jake' style={{textDecoration: 'none',  fontWeight: 900, fontFamily:'cabin',color: '#4E57A4'}}>
                     About Jake
                   </a>
                 </MenuItem>
@@ -196,7 +160,7 @@ function Header() {
               href= '/contact'
               className='menuBtn'
               variant="outlined"
-              style={{textDecoration: 'none', fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 2px', color: '#E5EBF7', borderRadius: '3px', marginLeft: '5px'}}
+              style={{textDecoration: 'none', fontWeight: 900, fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 3px', color: '#E5EBF7', borderRadius: '3px', marginLeft: '5px'}}
               >
                 Contact
               </Button>

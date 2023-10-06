@@ -4,6 +4,7 @@ import Divider from '@mui/material/Divider';
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import ProjectCard from '../components/ProjectCard';
 import { buttons } from '../assets/Data';
@@ -23,17 +24,15 @@ function Projects(props) {
       : setFiltredCategory(getCategory());
   }
 
-
-  
   return (
     <>
-    <div style={{ backgroundColor: '#35386F'}}>
-    <Container sx={{minHeight: '85vh'}}>
+    <div style={{ backgroundColor: '#35386F', width: '100%'}}>
+    <Container sx={{minHeight: '85vh', minWidth: '80%'}}>
         <br />
         <Typography variant='h2' style={{fontFamily:'catshop', color: '#BEB2EE'}}> Our Work </Typography>
-        <Typography variant='body1' style={{fontFamily: 'cabin', color: '#E5EBF7 '}}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Typography>
-        <br />
-        <Divider style={{backgroundColor: '#E4D4BC', opacity: '50%', height: '2px'}}/>
+        <Typography variant='h6' style={{fontFamily: 'cabin', color: '#E5EBF7 '}}> Explore the categories below to look through our work and collaborations</Typography>
+        {/* <br />
+        <Divider style={{backgroundColor: '#E4D4BC', opacity: '50%', height: '2px'}}/> */}
         <br />
         <Box sx={{ width: '100%' }}>
           <Grid container rowSpacing={1} spacing={1} >
@@ -41,14 +40,17 @@ function Projects(props) {
               buttons.map((type, index) => (
                 <>
                 <Grid item >
-                  <button 
+                  <Button 
                     key={index} 
                     value={type.value} 
-                    onClick={handleCategory} 
-                    style={{ border: 'none', textDecoration: 'underline', cursor: 'pointer', background: 'none', fontSize: '25px', fontFamily:'catshop', paddingRight: '20px', color: '#E5EBF7 '}}
+                    onClick={handleCategory}
+                    className= 'categoryBtn'
+                    style={{fontSize: '18px', fontFamily: 'cabin', color: 'white', border: 'white solid 2px', boxShadow: 'none', borderRadius: '3px'}}
+                    size='small'
+                
                     >
                     {type.name}
-                  </button>
+                  </Button>
                 </Grid>
                 </>
               ))}
@@ -57,9 +59,11 @@ function Projects(props) {
         <br />
         <Divider style={{backgroundColor: '#E4D4BC', opacity: '50%',height: '2px'}}/>
         <br />
+        <Divider style={{backgroundColor: '#E4D4BC', opacity: '50%',height: '2px'}}/>
+        <br />
 
     <Box sx={{ width: '100%', paddingBottom: '35px', margin: 0}}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {filtredCategory &&
           filtredCategory.map(type => (
             <>
