@@ -11,7 +11,7 @@ function ProjectCard(type, category) {
   
   return (
       <>
-        <div >
+        <div>
           <Card sx={{ background: '#4E57A4', borderRadius: 1, display: "flex", flexDirection: "column"}}>
             <CardMedia
               component="img"
