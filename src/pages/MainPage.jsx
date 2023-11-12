@@ -78,7 +78,7 @@ function Item(props)
         <Paper style={{backgroundColor:'#4E57A4', height: 'auto', padding: '20px', margin: 'auto', marginTop: '30px'}}>
             <Typography variant="h2" style={{fontFamily:'catshop', color: '#BEB2EE'}}>{props.item.name}</Typography>
       
-            <Typography variant='h4' style={{fontFamily:'cabin', color: '#BEB2EE', padding: '10px'}}>{props.item.description}</Typography>
+            <Typography variant='h4' style={{fontFamily:'averia', color: '#BEB2EE', padding: '10px'}}>{props.item.description}</Typography>
 
             <Button href='/services' className='menuBtn' style={{fontFamily:'cabin',  fontWeight: 900, background: 'none',  border: '#E5EBF7 solid 3px', color: '#E5EBF7', borderRadius: '3px', margin: '10px'}}>
                 Learn More
@@ -95,7 +95,13 @@ function Item(props)
       <ImageComponents/>
       </Grid>
 
-      <Grid>
+      <Grid item sx={{padding: '20px'}}>
+        <Box sx={{backgroundColor: '#4E57A4', padding: '30px', borderRadius: '5px'}}>
+          <Typography sx={{fontFamily:'averia', fontSize: '25px', color: 'white'}}> Helen and Jake are a narrative design team. You may hire either individually or both together. Feel free to reach out to us for any of your game writing needs!  </Typography>
+        </Box>     
+      </Grid>
+
+      <Grid item>
         <OfferCarousel/>
       </Grid>
 
@@ -113,7 +119,7 @@ function Item(props)
 
       <Grid item sx={{padding: '20px'}}>
         <Box sx={{backgroundColor: '#4E57A4', padding: '30px', borderRadius: '5px'}}>
-          <Typography sx={{fontFamily:'catshop', fontSize: '25px', color: 'white'}}> Helen and Jake are a narrative design team. You may hire either individually or both together. Feel free to reach out to us for any of your game writing needs!  </Typography>
+          <Typography sx={{fontFamily:'averia', fontSize: '25px', color: 'white'}}> Helen and Jake are a narrative design team. You may hire either individually or both together. Feel free to reach out to us for any of your game writing needs!  </Typography>
         </Box>     
       </Grid>
     </Grid>

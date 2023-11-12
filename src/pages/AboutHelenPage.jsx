@@ -31,26 +31,26 @@ function AboutHelen() {
                     </Typography>
                     <Divider  style={{ backgroundColor: '#BEB2EE', height: '3px', width:'80%', margin: 'auto'}}/>
                     <br/>
-                    <Typography variant='h5' style={{ color: '#E5EBF7', fontFamily: 'cabin'}}>
+                    <Typography variant='h5' style={{ color: '#E5EBF7', fontFamily: 'catshop'}}>
                     HEAD WRITER – BLACKTOP HOOPS
                     </Typography>
-                    <Typography variant='body' style={{ color: '#BEB2EE', fontFamily: 'cabin'}}>
+                    <Typography variant='body' style={{ color: '#BEB2EE', fontFamily: 'averia'}}>
                     Blacktop Hoops is a virtual reality basketball game. Helen designed the singleplayer narrative campaign mode, created the backstory and lore for the cast of twelve characters, wrote seven cinematic scripts for VR cutscenes, directed voice actors, and wrote over 3,000 lines of dialogue for characters. Helen collaborated with the creative directors and developers over multiple sessions to tweak and revise until the precise vision of the game was fully realized.  
                     </Typography>
                     <br/>
                     <br/>
-                    <Typography variant='h5' style={{ color: '#E5EBF7', fontFamily: 'cabin'}}> 
+                    <Typography variant='h5' style={{ color: '#E5EBF7', fontFamily: 'catshop'}}> 
                     HEAD OF STORY - RUSHDOWN REVOLT
                     </Typography>
-                    <Typography variant='body' style={{ color: '#BEB2EE', fontFamily: 'cabin'}}>
+                    <Typography variant='body' style={{ color: '#BEB2EE', fontFamily: 'averia'}}>
                     Rushdown Revolt is a platform fighting game. Helen created lore for an existing game with a dedicated fanbase, and studied the gameplay and the fandom to ensure that the lore felt like it had been there from the very beginning. She created and maintained the lore bible with backstories for the game’s cast of 12 original characters. She traced back the lineage of the characters and the emotional and historic developments that led to the world, with lore going back centuries. She wrote in-game dialogue and directed voice actors. She designed concepts for physical merchandise, such as key chains, bucket hats, and stickers. She wrote supplemental short stories to generate excitement for new characters and further flesh out backstories. One of Helen’s greatest joys on this project was learning to work across several different disciplines–in her role as Head of Story, she collaborated with the art, media, and programming teams to ensure cohesive storytelling
                     </Typography>
                     <br/>
                     <br/>
-                    <Typography variant='h5' style={{ color: '#E5EBF7', fontFamily: 'cabin'}}>
+                    <Typography variant='h5' style={{ color: '#E5EBF7', fontFamily: 'catshop'}}>
                     STORY EDITOR - ARTIFICIAL
                     </Typography>
-                    <Typography variant='body' style={{ color: '#BEB2EE', fontFamily: 'cabin'}}>
+                    <Typography variant='body' style={{ color: '#BEB2EE', fontFamily: 'averia'}}>
                     Artificial is a primetime-Emmy-award-winning, live interactive scripted television program. Helen wrote on the fourth season, plotted out potential branching storylines and crafted character responses to audience questions in real time, sharpening her skills for quickly writing snappy, authentic dialogue. 
                     </Typography>
                     <br/>

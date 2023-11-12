@@ -37,7 +37,7 @@ function ContactPage () {
             Contact Form
           </Typography>
           <Divider variant="fullWidth" style={{backgroundColor: 'white', opacity: '50%',height: '2px', marginBottom: '15px'}} /> 
-          <Typography variant='h6' style={{ fontFamily: 'cabin', textAlign: 'center', color: '#E5EBF7'}}>
+          <Typography variant='h6' style={{ fontFamily: 'averia', textAlign: 'center', color: '#E5EBF7'}}>
           Are you interested in hiring Narrative Witchcraft for your next project? Want to learn more about how we can level up your story? Don’t be shy; drop us a line below!
           </Typography>
           <br/>
@@ -99,7 +99,7 @@ function ContactPage () {
                 className="contact-btn" 
                 type='submit' 
                 value='Submit' 
-                style={{ fontFamily: 'catshop', color: 'black', fontSize: '20px', letterSpacing: '3px', width: '100%', border: '#8798ED 2px solid', boxShadow: '3px 3px #411ECC', backgroundColor: '#8798ED'}} 
+                style={{ fontFamily: 'cabin', color: 'black', fontSize: '20px', letterSpacing: '3px', width: '100%', border: '#8798ED 2px solid', boxShadow: '3px 3px #411ECC', backgroundColor: '#8798ED'}} 
                 disabled={!isDirty || !isValid} 
                 onClick={() => {
                   alert('Thank you! Your email was sent!');

@@ -9,6 +9,14 @@ body {
   font-family: catshop;
   src: url('././fonts/catshop/CatShop.ttf');
 }
+@font-face {
+  font-family: cabin;
+  src: url('././fonts/cabin/Cabin-Medium.ttf');
+}
+@font-face {
+  font-family: averia;
+  src: url('././fonts/averia/Averia-Regular.ttf');
+}
 
 /* Global styles */
 body, html { 

@@ -147,9 +147,6 @@
 
 .categoryBtn:hover{
   background-color: #BEB2EE !important;
+  border: #BEB2EE solid 2px !important;
   color: #4E57A4 !important;
-}
-
-.categoryBtn :hover{
-  background-color: #4E57A4 !important;
 }

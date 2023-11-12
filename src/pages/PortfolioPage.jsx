@@ -30,7 +30,7 @@ function Projects(props) {
     <Container sx={{minHeight: '85vh', minWidth: '80%'}}>
         <br />
         <Typography variant='h2' style={{fontFamily:'catshop', color: '#BEB2EE'}}> Our Work </Typography>
-        <Typography variant='h6' style={{fontFamily: 'cabin', color: '#E5EBF7 '}}> Explore the categories below to look through our work and collaborations</Typography>
+        <Typography variant='h6' style={{fontFamily: 'averia', color: '#E5EBF7 '}}> Explore the categories below to look through our work and collaborations</Typography>
         {/* <br />
         <Divider style={{backgroundColor: '#E4D4BC', opacity: '50%', height: '2px'}}/> */}
         <br />
@@ -39,13 +39,13 @@ function Projects(props) {
             {buttons &&
               buttons.map((type, index) => (
                 <>
-                <Grid item >
+                <Grid item sx={{margin:'5px'}}>
                   <Button 
                     key={index} 
                     value={type.value} 
                     onClick={handleCategory}
                     className= 'categoryBtn'
-                    style={{fontSize: '18px', fontFamily: 'cabin', color: 'white', border: 'white solid 2px', boxShadow: 'none', borderRadius: '3px'}}
+                    style={{fontSize: '18px', fontFamily: 'cabin', color: 'white', border: 'white solid 2px', boxShadow: 'none', borderRadius: '3px', paddingLeft: '10px', paddingRight: '10px', width: '100%'}}
                     size='small'
                 
                     >
@@ -67,7 +67,7 @@ function Projects(props) {
         {filtredCategory &&
           filtredCategory.map(type => (
             <>
-            <Grid item xs={12} md={6} lg={3}>
+            <Grid item xs={12} md={6} lg={4}>
               <ProjectCard key={type.id} {...type}/>
             </Grid>
             </>

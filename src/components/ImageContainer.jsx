@@ -13,14 +13,14 @@ function ImageComponents() {
     <div  className='article'>
           <img 
             alt="main" 
-            src={'https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80'} 
+            src={'https://images.unsplash.com/photo-1432958576632-8a39f6b97dc7?q=80&w=2346&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} 
             loading='lazy'
             className='picture'
             style={{boxShadow: '1px 1px 3px'}}
             />
 
             <Box className='header'>
-              <Typography variant='h5' sx={{ fontFamily: 'catshop', marginBottom: '20px'}}>
+              <Typography variant='h5' sx={{ fontFamily: 'averia', marginBottom: '20px'}}>
               You open the website, looking to hire a talented narrative designer. What do you do first?
               </Typography>
               <Stack spacing={2} direction="row" justifyContent="center">

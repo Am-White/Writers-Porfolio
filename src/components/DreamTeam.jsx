@@ -65,7 +65,7 @@ function DreamTeam() {
               <Grid item xs={12} >
                 <Box alt='icon' component='img' src={helen} className='teamImg'/>
                 <Box sx={{width: '90%', borderRadius: '5px', backgroundColor: 'none', padding: '20px', margin: 'auto', marginBottom: '80px'}}>
-                  <Typography variant='h4' sx={{ fontFamily: 'catshop', color: '#BEB2EE',  borderBottom: '#BEB2EE 4px solid'}}>Helen Silverstein</Typography>
+                  <Typography variant='h4' sx={{ fontFamily: 'averia', color: '#BEB2EE',  borderBottom: '#BEB2EE 4px solid'}}>Helen Silverstein</Typography>
                   <br />
                   <Button href='/About Helen' className='menuBtn' variant="outlined"
                     style={{fontFamily:'cabin', fontSize: '18px', fontWeight: 800, backgroundColor: '#8798ED',  border: '#8798ED solid 3px', boxShadow: '3px 3px #411ECC', borderRadius: '3px',color: '#411ECC'}}>
@@ -79,7 +79,7 @@ function DreamTeam() {
                     <Grid item xs={12}>
                       <Box alt='icon' component='img'src={jake} className='teamImg'/>
                       <Box sx={{width: '90%', borderRadius: '5px', marginBottom: '20px', backgroundColor: 'none', padding: '20px', margin: 'auto'}}>
-                        <Typography variant='h4' sx={{ fontFamily: 'catshop', color: '#BEB2EE',  borderBottom: '#BEB2EE 4px solid'}}>Jake Nelson</Typography>
+                        <Typography variant='h4' sx={{ fontFamily: 'averia', color: '#BEB2EE',  borderBottom: '#BEB2EE 4px solid'}}>Jake Nelson</Typography>
                         <br />
                         <Button href='/About Jake' className='menuBtn' variant="outlined"
                           style={{fontFamily:'cabin', fontSize: '18px', fontWeight: 800, backgroundColor: '#8798ED', border: '#8798ED solid 3px', boxShadow: '3px 3px #411ECC', borderRadius: '3px', color: '#411ECC'}}>
