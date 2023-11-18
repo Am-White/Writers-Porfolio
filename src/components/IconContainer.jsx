@@ -11,11 +11,11 @@ function IconComponents() {
 
   return (
     <>
-              <Typography variant='h2' style={{fontFamily: 'catshop', color: '#E5EBF7', padding: '10px', marginTop: '40px' }}>
+              <Typography variant='h2' style={{fontFamily: 'catshop', color: '#E5EBF7', padding: '10px', marginTop: '30px'}}>
                 What We Do
               </Typography>
 
-              <Grid container columns={{xs: 1, sm: 4, md: 8, lg: 12 }}  justifyContent='center' sx={{width: '100%', margin: 'auto'}}>
+              <Grid container columns={{xs: 1, sm: 4, md: 8, lg: 12 }}  justifyContent='center' sx={{width: '100%', margin: 'auto', padding: '10px'}}>
                 <Grid item xs={2} sm={3} md={4} className='iconGrid'>
                   <Box sx={{ flexGrow: 1, marginBottom: '5px' }} className='iconContainer'>
                     <Box alt='icon' component='img' src={'https://img.icons8.com/?size=512&id=DBkjPk4hSDoE&format=png'} className='icons'/>
@@ -41,7 +41,7 @@ function IconComponents() {
                         <Box alt='icon' component='img' src={'https://img.icons8.com/?size=512&id=ajkz1dk1AfEe&format=png'} className='icons'/>
                         <Typography variant='h4' style={{fontFamily: 'catshop', color: '#373737'}}>Finishing Touches</Typography>
                         <Typography variant='h6' style={{fontFamily: 'averia', color: '#373737', padding: '3%'}}>
-                        We will craft deliverables to your liking and work together until they’re perfect. We’ll listen and implement your input. We will create a bible so comprehensive that, years from now, if the game becomes bigger, you can continue to add and develop the lore. We want to make sure you have the tools you need in the long term.
+                        We will craft deliverables to your liking and work together with you until they’re perfect. We can create a comprehensive story bible tailored to your unique game, so your team can stay on the same page throughout development. We want to make sure you have the tools you need in the long term to bring your game’s story to life.
                         </Typography>
                       </Box>
                     </Grid>

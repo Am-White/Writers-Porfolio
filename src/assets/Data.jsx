@@ -11,6 +11,7 @@ import img10 from './../images/paidcash.png';
 import img11 from './../images/shadow.png';
 import img12 from './../images/smoke.png';
 import img13 from './../images/artificial.png';
+import img14 from './../images/CampaignNarrative.png';
 
 export const projects = [
   {
@@ -18,17 +19,17 @@ export const projects = [
     img: img1,
     title: '“94-50” Gameplay Dialogue and Barks',
     subTitle: '(Blacktop Hoops)',
-    category: 'Dialogue',
+    category: 'scenes-dialouge',
     downloadLink: 'https://docs.google.com/document/d/1lxxW19p83cjoA4zcydUv1iBrUhvwm02SM03rdrYytRA/edit',
     preText: 'This sample includes 326 lines of dialogue and barks for “94-50,” a non-player character who...',
   },
   {
     id: 2,
-    img: '',
+    img: img14,
     title: 'Campaign Narrative Outline',
     subTitle: '(Blacktop Hoops)',
-    category: '',
-    downloadLink: 'https://drive.google.com/drive/folders/1zVhg-kbcP4YNUIeue5SsC3_jjrYO5sT7',
+    category: 'narrative',
+    downloadLink: 'https://drive.google.com/file/d/1f0jiu6f5RR2aXOJzy8uekHzRdOhv0f7w/view?usp=drive_link',
     preText: 'The primary conflict of the campaign is a series of tournaments, which...',
   },
   {
@@ -80,7 +81,7 @@ export const projects = [
     img: img8,
     title: 'Los Angeles Intro Cinematic Script',
     subTitle: '(Blacktop Hoops)',
-    category: 'scene',
+    category: 'scenes-dialouge',
     downloadLink: 'https://drive.google.com/file/d/1L9f1Cep-Dqa6pepyMYGvrtDeRPEmmHkY/view?usp=drive_link',
     preText: 'NOTES: POV REFERS TO PLAYERS POINT OF VIEW...',
   },
@@ -89,7 +90,7 @@ export const projects = [
     img: img9,
     title: 'NYC Intro Cinematic Script',
     subTitle: '(Blacktop Hoops)',
-    category: 'scene',
+    category: 'scenes-dialouge',
     downloadLink: 'https://drive.google.com/file/d/1uI_Eq3dUz0lXc_6WgdDnQ3eTK2bePTP5/view?usp=drive_link',
     preText: 'CENTRAL POV: Were high above the NYC basketball court, looking down...',
   },
@@ -98,7 +99,7 @@ export const projects = [
     img: img10,
     title: 'Paid Cash Gameplay Dialogue and Barks',
     subTitle: '(BlackTop Hoops)',
-    category: 'dialogue',
+    category: 'scenes-dialouge',
     downloadLink: 'https://docs.google.com/document/d/1YA7L6WmPEaI7LQckkqhPiYL96A9hIViJZHxQkIEcSLU/edit',
     preText: 'This sample includes 368 lines of dialogue and barks for the character “Paid Cash,”...',
   },
@@ -107,7 +108,7 @@ export const projects = [
     img: img11,
     title: 'Shadow',
     subTitle: '(Rushdown Revolt)',
-    category: 'short-stories',
+    category: 'scenes-dialouge',
     downloadLink: 'https://docs.google.com/document/d/1qPDO5L7QMdNyjUPMtpa7_8Px2zdSLlyXAaLhmlpDpKk/edit',
     preText: 'Reina moved with the weightless grace of smoke, scouring the ruins...',
   },
@@ -116,7 +117,7 @@ export const projects = [
     img: img12,
     title: 'Smoke',
     subTitle: '(Rushdown Revolt)',
-    category: 'short-stories',
+    category: 'scenes-dialouge',
     downloadLink: 'https://docs.google.com/document/d/1_FaU-a0tgMGis0NSi3xnErVCNmIzLATn-xsfsaI5zfM/edit',
     preText: 'Raymer detested the rain. He hated the smell of it, hated the danger it..',
   },
@@ -125,7 +126,7 @@ export const projects = [
     img: img13,
     title: 'Artificial',
     subTitle: '(Season 4)',
-    category: 'scene',
+    category: 'scenes-dialouge',
     downloadLink: 'https://www.twitch.tv/videos/1151006403',
     preText: 'In the story premiere of the Season. Host Blake Bloom reveals the two factions..',
   }
@@ -137,27 +138,19 @@ export const projects = [
     value: "all"
   },
   {
-    name: "Dialogue",
-    value: "dialogue"
+    name: "Scenes & Dialogue",
+    value: "scenes-dialouge"
   },
   {
-    name: "Scene",
-    value: "scene"
+    name: "Narrative Design",
+    value: "narrative"
   },
   {
     name: "Copywriting",
     value: "copywriting"
   },
   {
-    name: "Short Stories",
-    value: "short-stories"
-  },
-  {
-    name: "Lore & Worldbuilding",
-    value: "lore-world"
-  },
-  {
-    name: "Full Script Samples",
-    value: "full-samples"
-  },
+    name: 'Lore & Worlbuilding',
+    value: 'lore-world'
+  }
 ];

@@ -55,8 +55,7 @@ function Header() {
     >
       <List >
         <ListItem disablePadding>
-          <ListItemButton>
-            <a href="/" style={{textDecoration: 'none', fontFamily: 'catshop', fontSize: '30px', color: '#35386F'}}> Home </a>
+          <ListItemButton href="/" style={{textDecoration: 'none', fontFamily: 'catshop', fontSize: '30px', color: '#35386F'}}> Home
             </ListItemButton>
           </ListItem>
         {pages.map((page) => (
@@ -71,7 +70,7 @@ function Header() {
   );
 
   return (
-    <AppBar position="static" style={{boxShadow: 'none', backgroundColor: '#35386F', width: '100%'}}>
+    <AppBar position="static" style={{boxShadow: 'none', backgroundColor: '#35386F'}}>
       <Container maxWidth="xxl">
         <Toolbar disableGutters>
           <a href='/'>

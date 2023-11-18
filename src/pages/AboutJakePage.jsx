@@ -36,23 +36,23 @@ function AboutJake() {
                     <Typography variant='h5' style={{ color: '#E5EBF7', fontFamily: 'catshop'}}>
                     GAME WRITER - BLACKTOP HOOPS
                     </Typography>
-                    <Typography variant='body' style={{marginBottom: '10px', fontFamily: 'averia'}}>
-                    <li> Wrote 3,300+ lines of dialogue and character barks for Blacktop Hoops, the first AAA multiplayer arcade VR basketball game</li>
-                    <li> Crafted scripts for 7 unique cinematics that appear throughout the game's campaign mode, leveraging the unique opportunities and restrictions of VR to propel the story using groundbreaking techniques</li>
-                    <li> Designed the narrative for a story-driven campaign mode that spans 4 diverse locations</li>
-                    <li>  Created a character bible for 12 unique bosses, each with their own distinct personality, background, relationships, and motivations</li>
-                    <li> Conducted thorough research of streetball history, culture, slang, and trends using a variety of sources (TikTok, YouTube, academic articles, documentaries, etc.) to write characters and dialogue that are grounded in real world streetball culture</li>
+                    <Typography variant='body' style={{marginBottom: '10px', fontFamily: 'averia', listStyle: 'none'}}>
+                    <li> - Wrote 3,300+ lines of dialogue and character barks for Blacktop Hoops, the first AAA multiplayer arcade VR basketball game</li>
+                    <li> - Crafted scripts for 7 unique cinematics that appear throughout the game's campaign mode, leveraging the unique opportunities and restrictions of VR to propel the story using groundbreaking techniques</li>
+                    <li> - Designed the narrative for a story-driven campaign mode that spans 4 diverse locations</li>
+                    <li> - Created a character bible for 12 unique bosses, each with their own distinct personality, background, relationships, and motivations</li>
+                    <li> - Conducted thorough research of streetball history, culture, slang, and trends using a variety of sources (TikTok, YouTube, academic articles, documentaries, etc.) to write characters and dialogue that are grounded in real world streetball culture</li>
                     </Typography>
                     <br/>
                     <br/>
                     <Typography variant='h5' style={{ color: '#E5EBF7', fontFamily: 'catshop'}}> 
                     LORE WRITER & NARRATIVE DESIGNER - RUSHDOWN REVOLT
                     </Typography>
-                    <Typography variant='body' style={{marginBottom: '10px', fontFamily: 'averia'}}>
-                    <li > Created the lore and world for Rushdown Revolt, a revolutionary platform fighting game featuring 12 unique combatants to choose from</li>
-                    <li > Led the story direction for an original playable character, The Torment, and collaborated closely with art and development teams throughout production</li>
-                    <li > Created and maintained documentation (including timeline, character bios, world history, etc.) that guided the development of characters, stages, campaign mode, and other assets</li>
-                    <li > Wrote compelling short stories, dialogue, in-game copy, and strings for character skins</li>
+                    <Typography variant='body' style={{marginBottom: '10px', listStyle: 'none', fontFamily: 'averia'}}>
+                    <li > - Created the lore and world for Rushdown Revolt, a revolutionary platform fighting game featuring 12 unique combatants to choose from</li>
+                    <li > - Led the story direction for an original playable character, The Torment, and collaborated closely with art and development teams throughout production</li>
+                    <li > - Created and maintained documentation (including timeline, character bios, world history, etc.) that guided the development of characters, stages, campaign mode, and other assets</li>
+                    <li > - Wrote compelling short stories, dialogue, in-game copy, and strings for character skins</li>
                     </Typography>
                     <br/>
                     <Typography variant='h5' style={{ color: '#E5EBF7', fontFamily: 'catshop'}}>

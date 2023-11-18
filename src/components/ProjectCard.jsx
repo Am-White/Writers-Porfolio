@@ -5,21 +5,28 @@ import Button from '@mui/material/Button';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
+import Grid from '@mui/material/Grid';
 import './style.css';
 
 function ProjectCard(type, category) {
+
   
   return (
       <>
-        <div>
-          <Card sx={{ background: '#4E57A4', borderRadius: 1, display: "flex", flexDirection: "column"}}>
+        <Grid item xs={12} md={6} lg={4} >
+          <Card sx={{
+                background: '#4E57A4', 
+                borderRadius: 1,  
+                display: "flex",
+                flexDirection: "column",
+              }}>
             <CardMedia
               component="img"
               height="200"
               image={type.img}
               alt="Cover Art"
             />
-            <CardContent sx={{minHeight: {sm:'200px', md: '300px', lg: '340px'}, maxHeight: 'fit-content'}}>
+            <CardContent style={{ margin: '5px'}}>
             <Typography variant="h4" style={{ fontFamily:'catshop', color: '#E5EBF7'}}>
                 {type.title}
               </Typography>
@@ -30,7 +37,9 @@ function ProjectCard(type, category) {
                 {type.preText}
               </Typography>
               <br/>
-              <CardActions>
+              </CardContent>
+              <CardContent>
+              <CardActions >
               <a href={type.downloadLink} download={type.title} target='_blank' rel="noopener noreferrer" style={{textDecoration: 'none', width: '100%',}}>
               <Button
                 className='cardBtn'
@@ -43,7 +52,7 @@ function ProjectCard(type, category) {
               </CardActions>
             </CardContent>
           </Card>
-        </div>
+        </Grid>
       </>
   )};
 

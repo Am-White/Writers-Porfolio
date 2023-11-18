@@ -22,11 +22,11 @@ function DreamTeam() {
   return (
     <>
       {isLayout ? (
-        <Box sx={{  borderRadius: '5px', background: '#4E57A4',  margin: '20px', padding: '30px'}}>
+        <Box sx={{  borderRadius: '5px', background: '#4E57A4'}}>
 
-          <Grid container justifyContent='center' alignItems='center' sx={{flexGrow: 1, margin: 'auto' }}>
+          <Grid container justifyContent='center' alignItems='center' sx={{display: 'flex', margin: 'auto'}}>
              <Grid item xs={12}>
-             <Typography variant='h2' style={{fontFamily: 'catshop', color: '#BEB2EE', marginBottom: '25px'}}> Who We Are</Typography>
+             <Typography variant='h2' style={{fontFamily: 'catshop', color: '#BEB2EE'}}> Who We Are</Typography>
              </Grid>
               <Grid item xs={6}>
                 <Box alt='icon' component='img' src={helen} className='teamImg'/>
@@ -56,7 +56,7 @@ function DreamTeam() {
 
       ) : (
         <>
-        <Box sx={{ borderRadius: '5px', background: '#4E57A4',  margin: '20px', padding: '30px'}}>
+        <Box sx={{ borderRadius: '5px', background: '#4E57A4'}}>
           
           <Grid container justifyContent='center' alignItems='center' >
             <Grid item xs={12}>
@@ -74,7 +74,7 @@ function DreamTeam() {
                 </Box>
               </Grid>
           </Grid>
-                <Grid container justifyContent='center' alignItems='center' sx={{}}>
+                <Grid container justifyContent='center' alignItems='center'>
       
                     <Grid item xs={12}>
                       <Box alt='icon' component='img'src={jake} className='teamImg'/>

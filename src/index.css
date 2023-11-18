@@ -8,14 +8,17 @@ body {
 @font-face {
   font-family: catshop;
   src: url('././fonts/catshop/CatShop.ttf');
+  font-display: swap;
 }
 @font-face {
   font-family: cabin;
   src: url('././fonts/cabin/Cabin-Medium.ttf');
+  font-display: swap;
 }
 @font-face {
   font-family: averia;
   src: url('././fonts/averia/Averia-Regular.ttf');
+  font-display: swap;
 }
 
 /* Global styles */

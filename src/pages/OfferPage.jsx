@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -94,7 +94,8 @@ function OfferPage() {
           href= '/portfolio'
           className='servicesBtn'
           variant="outlined"
-          style={{fontSize: 30,  fontWeight: 900, textDecoration: 'none', fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 5px', color: '#E5EBF7', borderRadius: '5px'}}> Explore Our Portfolio </Button>
+          style={{fontSize: 30,  fontWeight: 900, textDecoration: 'none', fontFamily:'cabin', background: 'none',  border: '#E5EBF7 solid 5px', color: '#E5EBF7', borderRadius: '5px'}}> Explore Our Portfolio 
+          </Button>
                   <br/>
           <br/>
           <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/FFFFFF/quill-pen.png" alt="quill-pen"/>
