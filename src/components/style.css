@@ -75,12 +75,12 @@
 }
 
 .iconContainer {
-  background-color: #cccccc;
+  background-color: #dddddd;
   padding: 20px;
   border-radius: 50% 50% 0% 0%;
   box-shadow: 10px 10px #9C30FD;
   min-width: 220px;
-  border: #cccccc solid 4px;
+  border: #dddddd solid 4px;
   color: #442222;
   height: 90%;
 }
