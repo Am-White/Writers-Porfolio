@@ -86,7 +86,7 @@ function Projects(props) {
         <br />
         <Typography variant='h5' sx={{color: '#BEB2EE', listStyle:"none", fontFamily: 'averia'}}>
           <li>
-          - Interactive Media Script Sample - Available upon Request
+          - Interactive Media Script Sample
           </li>
           <li>
           - Comedy Pilot Sample
